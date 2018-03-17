@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sample Website</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body style="background-image:url(img1.jpg);  color: #00ff55; " >
+	<div class="container">
+		<br><br>
+		<center><h1 style="color: #00A4AE;font-family:century gothic">DETAILS</h1></center>
+		<form action="" id="lg-form" name="lg-form" method="post">
+			
+			<div class="form-group">
+				<label for="username">Job Title:</label>
+				<input type="text" class="form-control" name="jobtitle" id="jodid" placeholder="TITLE" required/>
+			</div>
+			
+			<div class="form-group">
+				<label for="password">Job Location:</label>
+				<input type="text" class="form-control" name="loc" id="jobloc" placeholder="LOCATION" required />
+			</div>
+			<div class="form-group">
+				<label for="password">Experience:</label>
+				<input type="number" class="form-control" name="exp" id="exper" placeholder="*** in terms of YEARS ***" required />
+			</div>
+			<div class="form-group">
+				<label for="password">Job Description:</label>
+				<textarea class="form-control" name="desc" id="desc" placeholder="Description"></textarea>
+			</div>
+        
+			<center>	
+			<div>				
+				<button type="button" style="background-color:#00ff55; " class="btn btn-success" id="login" onclick="func()">Submit</button>
+			</div></center>
+            <p id="demo"></p>
+			<script type="text/javascript">
+				function func(){
+					var title=document.getElementById("jodid").value;
+					var job=document.getElementById("jobloc").value;
+					var exp=document.getElementById("exper").value;
+					var  desc=document.getElementById("desc").value;
+					console.log("JOB TITLE:"+title+"\nJOB LOCATION:"+job+"\nEXPERIENCE:"+exp+"\nDESCRIPTION:"+desc);
+				}
+			</script>
+        </form>
+    </div>
+</body>
+</html>
